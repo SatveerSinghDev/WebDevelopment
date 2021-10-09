@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <h1>Forgot Password Page</h1>
+    <h1>You will recieve password on your registered email</h1>
+    <div>
+        <form name="forgotForm" action="forgot.php" method="POST" onsubmit="return validateForgot()">
+            <input class="input" id="email" name="email" type="text" placeholder="Email or Phone"><br>
+            <input class="input" id="dob" name="Dob" type="text" onfocus="(this.type='date')"
+                placeholder="Date of Birth"><br>
+            <input id="button" type="submit" name="submit" value="Forgot"><br><br>
+
+        </form>
+    </div>
+    <a class="link" href="login.html">Click for login button</a>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>JoinNow</title>
+</head>
+
+<body>
+    <h1>JoinNow Page</h1>
+    <div>
+        <form name="joinNow" action="joinNow.php" method="POST" onsubmit="return validateJoinNowForm()">
+            <input class="input" id="email" name="email" type="text" placeholder="Email or Phone"><br>
+            <input class="input" id="password" name="password" type="password" placeholder="Password"><br>
+            *password must contain alphanumeric,special character, minimum length is 8. <br><br>
+            <input class="input" id="cPassword" name="confirmPassword" type="password"
+                placeholder="Confirm Password"><br>
+            <input class="input" id="dob" name="Dob" type="text" onfocus="(this.type='date')"
+                placeholder="Date of Birth"><br>
+            <input id="button" type="submit" name="submit" value="Join Now"><br><br>
+
+        </form>
+    </div>
+    <a class="link" href="login.html">Click for login button</a>
+
+</body>
+
+</html>
